@@ -1,0 +1,92 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+header {
+  width: 100%;
+  height: 0.44rem;
+  background: #0dc441;
+  font-size: 17px;
+  line-height: 0.44rem;
+  color: white;
+  text-align: center; }
+
+::-webkit-input-placeholder {
+  color: #cacaca; }
+
+.main {
+  flex: 1;
+  overflow: hidden; }
+  .main > div > p {
+    height: 0.33rem;
+    padding: 0.045rem 0.05rem; }
+    .main > div > p input {
+      width: 2.59rem;
+      height: 0.24rem;
+      border: 1px solid #aaaaaa;
+      border-radius: 3px;
+      box-sizing: border-box;
+      padding-left: 0.05rem; }
+    .main > div > p span {
+      font-size: 12px;
+      width: 0.45rem;
+      height: 0.25rem;
+      text-align: center;
+      line-height: 0.25rem;
+      border-radius: 3px;
+      display: inline-block;
+      background: #0dc441;
+      color: white; }
+  .main > div .show {
+    height: 0.07rem;
+    background: #f1f1f1;
+    border-top: 1px solid #aaaaaa; }
+  .main > div .content li {
+    padding: 0.15rem 0.115rem 0;
+    height: 0.75rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative; }
+    .main > div .content li img {
+      width: 0.475rem;
+      height: 0.475rem;
+      border-radius: 50%;
+      float: left; }
+    .main > div .content li dl {
+      float: left;
+      margin-left: 0.125rem; }
+      .main > div .content li dl dt {
+        font-size: 15px;
+        color: black;
+        height: 0.24rem;
+        line-height: 0.24rem;
+        padding-bottom: 0.075rem; }
+      .main > div .content li dl dd {
+        font-size: 12px;
+        color: #b8b8b8; }
+    .main > div .content li span {
+      width: 0.4rem;
+      height: 0.175rem;
+      display: block;
+      position: absolute;
+      right: 0.115rem;
+      top: 0.15rem;
+      background: #0dc441;
+      color: white;
+      font-size: 0.12rem;
+      text-align: center;
+      line-height: 0.175rem;
+      border-radius: 3px; }
+
+footer div dl:nth-child(2) dt i {
+  color: #0dc441; }
+footer div dl:nth-child(2) dd {
+  color: #0dc441; }
+
+/*# sourceMappingURL=found.css.map */

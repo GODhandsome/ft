@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<script>
+	       (function (doc, win) {
+	            var docEl = doc.documentElement,
+	            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	            recalc = function () {
+	              var clientWidth = docEl.clientWidth;
+	              if (!clientWidth) return;     
+	               docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+	            };
+	          if (!doc.addEventListener) return;
+	          win.addEventListener(resizeEvt, recalc, false);
+	          doc.addEventListener('DOMContentLoaded', recalc, false);
+	        })(document, window);
+	</script>
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/font/iconfont.css">
+	<link rel="stylesheet" href="/css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="/css/person.css">
+</head>
+<body>
+	<header>个人中心</header>
+
+	<div class="main">
+		<div>
+			
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+
+
+	
+</body>
+<script type="text/html" id="muban">
+	{{each list as item i}}
+		<div class="show"></div>
+		<div class="myself">
+			<img src="{{item.img}}" alt="">
+			<dl>
+				<dt>我叫{{item.name}}</dt>
+				<dd>我是{{item.des}}！哈哈哈哈！</dd>
+			</dl>
+			<p><span>{{item.good}}</span><i class="iconfont icon-dianzan"></i></p>
+		</div>
+
+
+		
+		<div class="swiper-container swiperbox">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide gun111">
+		        	<div>
+		        		{{each item.photo as item1 j}}
+		        			<img src="{{item.photo[j]}}" alt="">					        	
+			        	{{ /each }}
+		        	</div>
+		        </div>
+		        <div class="swiper-slide gun222">
+		        	<div>
+		        		{{each item.follow as item1 j}}
+		        			<img src="{{item.follow[j]}}" alt="">					        	
+			        	{{ /each }}
+		        	</div>
+		        </div>
+		        <div class="swiper-slide gun333">
+		        	<div>
+		        		{{each item.fans as item1 j}}
+		        			<img src="{{item.fans[j]}}" alt="">					        	
+			        	{{ /each }}
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+	{{/each}}
+</script>
+<script src="/lib/zepto.min.js"></script>
+<script src="/lib/require.js" data-main="/js/person.js"></script>
+</html>

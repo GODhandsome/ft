@@ -1,0 +1,10 @@
+define(["zepto"],function($){
+	$.ajax({
+		type:'get',
+		url:"/html/footer.html",
+		async:false,
+		success(data){
+			$(data).appendTo($("footer"));
+		}
+	});
+});

@@ -1,0 +1,94 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+header {
+  width: 100%;
+  height: 0.44rem;
+  background: #0dc441;
+  font-size: 17px;
+  line-height: 0.44rem;
+  color: white;
+  text-align: center; }
+
+.main {
+  flex: 1;
+  overflow: hidden; }
+  .main > div {
+    height: 100%; }
+    .main > div .show {
+      width: 100%;
+      height: 0.07rem;
+      background: #f1f1f1; }
+    .main > div .myself {
+      width: 100%;
+      padding: 0.085rem 0.115rem 0;
+      height: 0.65rem;
+      box-sizing: border-box; }
+      .main > div .myself img {
+        width: 0.475rem;
+        height: 0.475rem;
+        border-radius: 50%;
+        float: left; }
+      .main > div .myself dl {
+        float: left;
+        margin-left: 0.125rem; }
+        .main > div .myself dl dt {
+          font-size: 15px;
+          color: black;
+          height: 0.24rem;
+          line-height: 0.24rem;
+          padding-bottom: 0.075rem; }
+        .main > div .myself dl dd {
+          font-size: 12px;
+          color: #b8b8b8; }
+      .main > div .myself p {
+        text-align: right;
+        font-size: 10.5px; }
+        .main > div .myself p span {
+          color: #dddddd; }
+        .main > div .myself p i {
+          color: #dddddd; }
+    .main > div .swiperbox {
+      box-sizing: border-box;
+      height: 100%; }
+      .main > div .swiperbox .swiper-pagination {
+        height: 0.275rem;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        background: white;
+        justify-content: space-around;
+        font-size: 12px;
+        border-bottom: 1px solid #e5e5e5; }
+        .main > div .swiperbox .swiper-pagination span {
+          line-height: 0.265rem;
+          color: #999999;
+          display: block;
+          flex: 1;
+          border-bottom: 3px solid white; }
+        .main > div .swiperbox .swiper-pagination .choose {
+          color: #0dc441;
+          border-bottom-color: #0dc441; }
+      .main > div .swiperbox .swiper-wrapper {
+        padding: 0.275rem 0 0 0;
+        box-sizing: border-box; }
+        .main > div .swiperbox .swiper-wrapper .swiper-slide {
+          height: 100%; }
+          .main > div .swiperbox .swiper-wrapper .swiper-slide img {
+            width: 1.55rem;
+            height: 1.55rem;
+            margin-top: 0.05rem; }
+
+footer div dl:nth-child(4) dt i {
+  color: #0dc441; }
+footer div dl:nth-child(4) dd {
+  color: #0dc441; }
+
+/*# sourceMappingURL=person.css.map */

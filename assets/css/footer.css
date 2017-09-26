@@ -1,0 +1,50 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px; }
+
+footer {
+  height: 0.45rem;
+  background: #f1f1f1;
+  padding: 0.05rem 0 0 0; }
+  footer > div {
+    border-top: 1px solid #cdcdcd;
+    height: 0.445rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-item: center; }
+    footer > div .choose dt i {
+      color: #0dc441; }
+    footer > div .choose dd {
+      color: #0dc441; }
+    footer > div dl {
+      text-align: center; }
+      footer > div dl dt {
+        height: 0.265rem;
+        line-height: 0.265rem; }
+        footer > div dl dt i {
+          color: #cccccc;
+          font-size: 0.11rem; }
+        footer > div dl dt .icon-home {
+          font-size: 0.2rem; }
+      footer > div dl .photo {
+        position: relative;
+        z-index: 999;
+        margin-top: -0.1rem;
+        height: 0.5rem;
+        box-sizing: border-box;
+        border: 1px solid #dedede;
+        border-radius: 50%;
+        width: 0.5rem;
+        background: #ffffff;
+        line-height: 0.5rem; }
+        footer > div dl .photo i {
+          font-size: 0.28rem; }
+      footer > div dl dd {
+        font-size: 0.11rem;
+        color: #dddddd; }
+
+/*# sourceMappingURL=footer.css.map */

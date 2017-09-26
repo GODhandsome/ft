@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<script>
+	       (function (doc, win) {
+	            var docEl = doc.documentElement,
+	            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	            recalc = function () {
+	              var clientWidth = docEl.clientWidth;
+	              if (!clientWidth) return;     
+	               docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+	            };
+	          if (!doc.addEventListener) return;
+	          win.addEventListener(resizeEvt, recalc, false);
+	          doc.addEventListener('DOMContentLoaded', recalc, false);
+	        })(document, window);
+	</script>
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/font/iconfont.css">
+	<link rel="stylesheet" href="/css/swiper-3.4.2.min.css">	
+	<link rel="stylesheet" href="/css/index.css">
+
+</head>
+<body>
+	<header class="pages"><p></p></header>
+
+	<div class="main">		
+			<div class="swiper-container swiperbox">
+			    <div class="swiper-wrapper" id="qwe">
+			        <div class="swiper-slide one" id="one">
+			        	<div class="swiper-container" id="menu">
+						    <div class="swiper-wrapper" id="allscroll">
+						        <div class="swiper-slide gun111" id="lives">
+						        	<div>
+						        		<div class="export"></div>
+						        		<span class="load">上拉加载</span>
+						        	</div>
+						        	
+						        </div>
+						        <div class="swiper-slide gun222" id="lifes">
+						        	<div>
+						        		<div class="export"></div>
+						        		<span class="load">上拉加载</span>
+						        	</div>
+						        	
+						        </div>
+						        <div class="swiper-slide gun333" id="girls">
+						        	<div>
+						        		<div class="export"></div>
+						        		<span class="load">上拉加载</span>
+						        	</div>
+						        	
+						        </div>
+						    </div>
+						    <div class="swiper-pagination shows"></div>
+						</div>
+			        	
+			        	
+			        </div>
+			        <div class="swiper-slide swiper-no-swiping two" id="two">
+			        	<div>
+			        		<div class="export">
+			        			
+								<div class="myself">
+									<div>
+										<img src="img/pika.jpg" alt="">
+										<dl>
+											<dt>我叫小萌</dt>
+											<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+										</dl>
+										<p><span>3888 </span><i class="iconfont icon-dianzan"></i></p>
+									</div>
+									<img src="img/oo.jpg" alt="">
+									<p>小丸子呀小丸子</p>
+									<b></b>
+								</div>
+								<div class="myself">
+									<div>
+										<img src="img/pika.jpg" alt="">
+										<dl>
+											<dt>我叫小萌</dt>
+											<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+										</dl>
+										<p><span>3888 </span><i class="iconfont icon-dianzan"></i></p>
+									</div>
+									<img src="img/oo.jpg" alt="">
+									<p>小丸子呀小丸子</p>
+									<b></b>
+								</div>
+			        		</div>
+			        		<span class="load">上拉加载</span>
+			        	</div>
+			        	
+			        </div>
+			       
+			    </div>
+			 
+			</div>
+		
+	</div>
+
+	
+
+
+	<footer>
+		
+	</footer>
+	<script type="text/html" id="live">
+		{{each list as item i}}
+		<p><img src="/img/xixi.jpg" alt=""><span>现场</span></p>
+		{{/each}}
+	</script>
+	<script type="text/html" id="life">
+		{{each list as item i}}
+		<p><img src="/img/pika.jpg" alt=""><span>生活</span></p>
+		{{/each}}
+	</script>
+	<script type="text/html" id="girl">
+		{{each list as item i}}
+		<p><img src="/img/oo.jpg" alt=""><span>美女</span></p>
+		{{/each}}
+	</script>
+	<script type="text/html" id="0">
+		{{each list as item i}}
+		<p><img src="/img/xixi.jpg" alt=""><span>现场</span></p>
+		{{/each}}
+	</script>
+	<script type="text/html" id="1">
+		{{each list as item i}}
+		<p><img src="/img/pika.jpg" alt=""><span>生活</span></p>
+		{{/each}}
+	</script>
+	<script type="text/html" id="2">
+		{{each list as item i}}
+		<p><img src="/img/oo.jpg" alt=""><span>美女</span></p>
+		{{/each}}
+	</script>
+	<script type="text/html" id="3">
+		{{each list as item i}}
+		<div class="myself">
+			<div>
+				<img src="img/pika.jpg" alt="">
+				<dl>
+					<dt>我叫小萌</dt>
+					<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+				</dl>
+				<p><span>3888 </span><i class="iconfont icon-dianzan"></i></p>
+			</div>
+			<img src="img/oo.jpg" alt="">
+			<p>小丸子呀小丸子</p>
+			<b></b>
+		</div>
+		{{/each}}
+	</script>
+
+
+
+	<script src="/lib/zepto.min.js"></script>
+	<script src="/lib/require.js" data-main="/js/index1"></script>
+	
+</body>
+</html>

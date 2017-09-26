@@ -1,0 +1,119 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px; 
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+@function pxTorem($px){//$px为需要转换的字号
+    @return $px / 200 * 1rem;
+}
+header {
+  width: 100%;
+  height: 0.44rem;
+  background: #0dc441;
+  font-size: 17px;
+  line-height: 0.44rem;
+  color: white;
+  text-align: center; }
+
+::-webkit-input-placeholder {
+  color: #cacaca; }
+
+.main{
+  flex:1;
+  overflow:hidden;
+  >div{
+    >p{
+      height:pxTorem(66);
+      padding:pxTorem(9) pxTorem(10);
+      input{
+        width:pxTorem(518);
+        height:pxTorem(48);
+        border:1px solid #aaaaaa;
+        border-radius:3px;
+        box-sizing:border-box;
+        padding-left:pxTorem(10);
+      }
+      span{
+        font-size: 12px;
+        width:pxTorem(90);
+        height:pxTorem(50);
+        text-align:center;
+        line-height: pxTorem(50);
+        border-radius:3px;
+       
+        display:inline-block;
+        background:#0dc441;
+        color:white;
+      }
+    }
+    .show{
+      height:pxTorem(14);
+      background:#f1f1f1;
+      border-top:1px solid #aaaaaa;
+    }
+    .content{
+      li{
+        padding:pxTorem(30) pxTorem(23) 0;
+        height: pxTorem(150);
+        box-sizing:border-box;
+        border-bottom:1px solid #e5e5e5;
+        position:relative;
+        img{
+          width:pxTorem(95);
+          height:pxTorem(95);
+          border-radius:50%;
+          float:left;
+        }
+        dl{
+          float:left;
+          margin-left:pxTorem(25);
+          dt{
+            font-size: 15px;
+            color:black;
+            height:pxTorem(48);
+            line-height: pxTorem(48);
+            padding-bottom:pxTorem(15);
+          }
+          dd{
+            font-size: 12px;
+            color:#b8b8b8;
+          }
+        }
+        span{
+          width:pxTorem(80);
+          height:pxTorem(35);
+          display:block;
+          position:absolute;
+          right:pxTorem(23);
+          top:pxTorem(30);
+          background:#0dc441;
+          color:white;
+          font-size: pxTorem(24);
+          text-align:center;
+          line-height: pxTorem(35);
+          border-radius:3px;
+
+        }
+      }
+    }
+  }
+}
+footer{
+  div{
+    dl:nth-child(2){
+      dt{
+        i{
+          color:#0dc441;
+        }
+      }
+      dd{
+         color:#0dc441;
+      }
+    }
+  }
+}

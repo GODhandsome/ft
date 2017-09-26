@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<script>
+	       (function (doc, win) {
+	            var docEl = doc.documentElement,
+	            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	            recalc = function () {
+	              var clientWidth = docEl.clientWidth;
+	              if (!clientWidth) return;     
+	               docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+	            };
+	          if (!doc.addEventListener) return;
+	          win.addEventListener(resizeEvt, recalc, false);
+	          doc.addEventListener('DOMContentLoaded', recalc, false);
+	        })(document, window);
+	</script>
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/font/iconfont.css">
+	<link rel="stylesheet" href="/css/found.css">
+	<script type="text/html" id="muban">
+	{{each list as item i}}
+	 	<li>
+			<img src="{{item.src}}">
+			<dl>
+				<dt>我叫{{item.name}}</dt>
+				<dd>我是{{item.des}}哈哈哈哈！</dd>
+			</dl>
+			<span>关注</span>
+		</li>
+	{{/each}}
+</script>
+
+</head>
+<body>
+	<header>发现</header>
+	<div class="main">
+		<div>
+			<p><input type="text" placeholder="请输入昵称">
+			  <span class="search">搜索</span>
+			</p>
+			<div class="show"></div>
+			<ul class="content">
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<!-- <li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li>
+				<li>
+					<img src="/img/pika.jpg" alt="">
+					<dl>
+						<dt>我叫小萌</dt>
+						<dd>我是小萌我怕谁！哈哈哈哈！</dd>
+					</dl>
+					<span>关注</span>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<footer>
+	
+	</footer>
+
+
+	
+</body>
+	
+
+	<script src="/lib/zepto.min.js"></script>
+	<script src="/lib/require.js" data-main="/js/found.js"></script>
+		
+</html>

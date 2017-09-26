@@ -1,0 +1,189 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+header {
+  width: 100%;
+  height: 0.44rem;
+  background: #0dc441;
+  font-size: 17px;
+  line-height: 0.44rem;
+  color: white;
+  text-align: center; }
+  header p span {
+    font-size: 0.125rem;
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    background: #3dd067;
+    color: #a3e9b7; }
+  header p span:nth-child(1) {
+    border-radius: 0.125rem 0 0 0.125rem; }
+  header p span:nth-child(2) {
+    border-radius: 0 0.125rem 0.125rem 0; }
+  header p .choose {
+    background: #64d985;
+    color: white; }
+
+footer {
+  background: white; }
+
+.main {
+  flex: 1;
+  overflow: hidden; }
+  .main .swiperbox {
+    height: 100%; }
+    .main .swiperbox .swiper-wrapper {
+      height: 100%; }
+
+#two {
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box; }
+  #two .load {
+    height: 0.4rem;
+    display: block;
+    text-align: center;
+    line-height: 0.4rem;
+    background: #e5e5e5; }
+  #two .myself > div {
+    height: 0.7rem;
+    padding: 0.125rem 0.115rem 0;
+    box-sizing: border-box; }
+    #two .myself > div img {
+      width: 0.475rem;
+      height: 0.475rem;
+      border-radius: 50%;
+      float: left; }
+    #two .myself > div dl {
+      float: left;
+      margin-left: 0.125rem; }
+      #two .myself > div dl dt {
+        font-size: 15px;
+        color: black;
+        height: 0.24rem;
+        line-height: 0.24rem;
+        padding-bottom: 0.075rem; }
+      #two .myself > div dl dd {
+        font-size: 12px;
+        color: #b8b8b8; }
+    #two .myself > div p {
+      text-align: right;
+      font-size: 10.5px; }
+      #two .myself > div p span {
+        color: #dddddd; }
+      #two .myself > div p i {
+        color: #dddddd; }
+  #two .myself > img {
+    width: 100%; }
+  #two .myself > p {
+    font-size: 12px;
+    color: black;
+    padding: 0 0 0 0.25rem;
+    height: 0.33rem;
+    line-height: 0.33rem; }
+  #two .myself > b {
+    display: block;
+    border-top: #e5e5e5;
+    height: 0.05rem;
+    background: #f1f1f1; }
+
+#one {
+  height: 100%; }
+  #one #menu {
+    height: 100%; }
+    #one #menu .swiper-wrapper {
+      padding-top: 0.4rem;
+      height: 100%;
+      box-sizing: border-box; }
+      #one #menu .swiper-wrapper .load {
+        height: 0.4rem;
+        display: block;
+        text-align: center;
+        line-height: 0.4rem;
+        background: #e5e5e5; }
+      #one #menu .swiper-wrapper .gun111 p {
+        margin-top: 0.05rem;
+        width: 1.55rem;
+        height: 1.87rem;
+        display: inline-block;
+        border: 1px solid #e5e5e5; }
+        #one #menu .swiper-wrapper .gun111 p img {
+          width: 1.565rem;
+          height: 1.565rem;
+          border-bottom: 1px solid #e5e5e5; }
+        #one #menu .swiper-wrapper .gun111 p span {
+          display: block;
+          font-size: 11px;
+          height: 0.3rem;
+          line-height: 0.3rem;
+          padding-left: 0.115rem;
+          white-space: nowrap;
+          overflow: hidden; }
+      #one #menu .swiper-wrapper .gun222 p {
+        margin-top: 0.05rem;
+        width: 1.55rem;
+        height: 1.87rem;
+        display: inline-block;
+        border: 1px solid #e5e5e5; }
+        #one #menu .swiper-wrapper .gun222 p img {
+          width: 1.565rem;
+          height: 1.565rem;
+          border-bottom: 1px solid #e5e5e5; }
+        #one #menu .swiper-wrapper .gun222 p span {
+          display: block;
+          font-size: 11px;
+          height: 0.3rem;
+          line-height: 0.3rem;
+          padding-left: 0.115rem;
+          white-space: nowrap;
+          overflow: hidden; }
+      #one #menu .swiper-wrapper .gun333 p {
+        margin-top: 0.05rem;
+        width: 1.55rem;
+        height: 1.87rem;
+        display: inline-block;
+        border: 1px solid #e5e5e5; }
+        #one #menu .swiper-wrapper .gun333 p img {
+          width: 1.565rem;
+          height: 1.565rem;
+          border-bottom: 1px solid #e5e5e5; }
+        #one #menu .swiper-wrapper .gun333 p span {
+          display: block;
+          font-size: 11px;
+          height: 0.3rem;
+          line-height: 0.3rem;
+          padding-left: 0.115rem;
+          white-space: nowrap;
+          overflow: hidden; }
+    #one #menu .shows {
+      background: white;
+      height: 0.35rem;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      font-size: 15px;
+      border-bottom: 1px solid #e5e5e5; }
+      #one #menu .shows span {
+        line-height: 0.335rem;
+        color: #666666;
+        display: block;
+        flex: 1;
+        border-bottom: 3px solid white; }
+      #one #menu .shows .choose {
+        color: #0dc441;
+        border-bottom-color: #0dc441; }
+
+footer div dl:nth-child(1) dt i {
+  color: #0dc441; }
+footer div dl:nth-child(1) dd {
+  color: #0dc441; }
+
+/*# sourceMappingURL=index.css.map */

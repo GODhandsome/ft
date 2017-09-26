@@ -1,0 +1,128 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px; 
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+@function pxTorem($px){//$px为需要转换的字号
+    @return $px / 200 * 1rem;
+}
+header {
+  width: 100%;
+  height: 0.44rem;
+  background: #0dc441;
+  font-size: 17px;
+  line-height: 0.44rem;
+  color: white;
+  text-align: center; }
+
+.main{
+  flex:1;
+  overflow:hidden;
+   >div{
+    
+      height:100%;
+      .show{
+        width: 100%;
+        height:pxTorem(14);
+        background:#f1f1f1;
+      }
+      .myself{
+        width: 100%;
+        padding:pxTorem(17) pxTorem(23) 0;
+        height: pxTorem(130);
+        box-sizing:border-box;
+        img{
+            width:pxTorem(95);
+            height:pxTorem(95);
+            border-radius:50%;
+            float:left;
+          }
+          dl{
+            float:left;
+            margin-left:pxTorem(25);
+            dt{
+              font-size: 15px;
+              color:black;
+              height:pxTorem(48);
+              line-height: pxTorem(48);
+              padding-bottom:pxTorem(15);
+            }
+            dd{
+              font-size: 12px;
+              color:#b8b8b8;
+            }
+          }
+          p{
+            text-align:right;
+            font-size: 10.5px;
+            span{
+              color:#dddddd;
+            }
+            i{
+              color:#dddddd;
+
+            }
+          }
+      }
+
+
+      .swiperbox{
+          box-sizing:border-box;
+            height:100%;
+        .swiper-pagination{
+          height:pxTorem(55);
+          top:0;
+          z-index:999;
+          display:flex;
+          background:white;
+          justify-content:space-around;
+          font-size: 12px;
+          border-bottom:1px solid #e5e5e5;
+          span{
+            line-height: pxTorem(53);
+            color:#999999;
+            display:block;
+            flex:1;
+            border-bottom:3px solid white;
+          }
+          .choose{
+            color:#0dc441;
+            border-bottom-color:#0dc441;
+          }
+        }
+        .swiper-wrapper{
+          padding:pxTorem(55) 0 0 0;
+           box-sizing:border-box;
+          .swiper-slide{
+            height:100%;
+
+            img{
+              width:pxTorem(310);
+              height:pxTorem(310);
+              margin-top:pxTorem(10);
+            }
+          }
+        }
+      }
+   }
+}
+
+footer{
+  div{
+    dl:nth-child(4){
+      dt{
+        i{
+          color:#0dc441;
+        }
+      }
+      dd{
+         color:#0dc441;
+      }
+    }
+  }
+}

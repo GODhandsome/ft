@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<script>
+	       (function (doc, win) {
+	            var docEl = doc.documentElement,
+	            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	            recalc = function () {
+	              var clientWidth = docEl.clientWidth;
+	              if (!clientWidth) return;     
+	               docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+	            };
+	          if (!doc.addEventListener) return;
+	          win.addEventListener(resizeEvt, recalc, false);
+	          doc.addEventListener('DOMContentLoaded', recalc, false);
+	        })(document, window);
+	</script>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/login.css">
+	
+<body>
+	<header>足球圈 一 登录</header>
+	<form>
+		<input type="text" placeholder="手机号">
+		<input type="text" placeholder="密码">
+		<p>还没有账号？点击此处立即<a href="/html/register.html">注册</a></p>
+		<span></span>
+		<p class="but">提交</p>
+	</form>
+</body>
+<script src="/lib/zepto.min.js"></script>
+<script src="/lib/require.js" data-main="/js/login.js"></script>
+</head>
+</html>
